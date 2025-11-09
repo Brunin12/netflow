@@ -11,10 +11,6 @@ export type IANATimeZone = Extract<keyof typeof zones, string>; // Narrow to str
  * Represents a person featured in the portfolio.
  */
 export type Person = {
-  /** First name of the person */
-  firstName: string;
-  /** Last name of the person */
-  lastName: string;
   /** The name you want to display, allows variations like nicknames */
   name: string;
   /** Role or job title */

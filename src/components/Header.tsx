@@ -7,11 +7,9 @@ import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 import {
   routes,
   display,
-  about,
 } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
-import { projects, services } from "@/resources/content";
 
 export const Header = () => {
   const pathname = usePathname() ?? "";
@@ -109,7 +107,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="person"
                       href="/about"
-                      label={about.label}
+                      label={'Sobre'}
                       selected={pathname === "/about"}
                     />
                   </Row>
@@ -128,7 +126,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="grid"
                       href="/projetos"
-                      label={projects.label}
+                      label={'Projetos'}
                       selected={pathname.startsWith("/work")}
                     />
                   </Row>
@@ -147,7 +145,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="book"
                       href="/servicos"
-                      label={services.label}
+                      label={'Serviços'}
                       selected={pathname.startsWith("/blog")}
                     />
                   </Row>
