@@ -106,16 +106,16 @@ export const Header = () => {
                   <Row s={{ hide: true }}>
                     <ToggleButton
                       prefixIcon="person"
-                      href="/about"
+                      href="/sobre"
                       label={'Sobre'}
-                      selected={pathname === "/about"}
+                      selected={pathname === "/sobre"}
                     />
                   </Row>
                   <Row hide s={{ hide: false }}>
                     <ToggleButton
                       prefixIcon="person"
-                      href="/about"
-                      selected={pathname === "/about"}
+                      href="/sobre"
+                      selected={pathname === "/sobre"}
                     />
                   </Row>
                 </>
@@ -175,7 +175,7 @@ export const Header = () => {
             textVariant="body-default-s"
             gap="20"
           >
-            <Flex s={{ hide: true }}><a href="#projetos">Entre em Contato</a></Flex>
+            <Flex s={{ hide: true }}><a href="/contato">Entre em Contato</a></Flex>
           </Flex>
         </Flex>
       </Row>

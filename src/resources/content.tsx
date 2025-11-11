@@ -57,7 +57,7 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/#planos",
+    href: "/servicos",
   },
   subline: (
     <>

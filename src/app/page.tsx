@@ -11,7 +11,8 @@ import {
   Meta,
   Line,
 } from "@once-ui-system/core";
-import { home, person, baseURL, routes } from "@/resources";
+import { home, person, baseURL } from "@/resources";
+import Projects from "@/components/Projects";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -82,23 +83,36 @@ export default function Home() {
               weight="default"
               arrowIcon
             >
-              <Row gap="8" vertical="center" paddingRight="4">            
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="m"
-                  />                
+              <Row gap="8" vertical="center" paddingRight="4">
+                <Avatar
+                  marginRight="8"
+                  style={{ marginLeft: "-0.75rem" }}
+                  src={person.avatar}
+                  size="m"
+                />
                 NetFlow
               </Row>
             </Button>
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
-        <p>projetos aqui</p>
-      </RevealFx>
-      <p>mais projetos</p>
+      <Column gap="40" align="center" fillWidth>
+        <RevealFx translateY="16" delay={0.3}>
+          <Text
+            variant="display-default-l"
+            onBackground="neutral-strong"
+            style={{ textAlign: "center", width: "100%" }}
+          >
+            Projetos Recentes
+          </Text>
+        </RevealFx>
+
+
+        <RevealFx translateY="24" delay={0.6}>
+          <Projects />
+        </RevealFx>
+      </Column>
+
     </Column>
   );
 }
