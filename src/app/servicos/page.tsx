@@ -44,12 +44,12 @@ export default function ServicosPage() {
         <Text
           variant="display-default-l"
           onBackground="neutral-strong"
-          style={{ textAlign: "center", width: "100%", marginBottom: '30px' }}
+          style={{ textAlign: "center", width: "100%", marginBottom: "30px" }}
         >
           Nossos Serviços
         </Text>
       </RevealFx>
-          
+
       <Card padding="12" radius="l" shadow="m" background="page">
         <Column gap="16">
           <Text
@@ -57,10 +57,9 @@ export default function ServicosPage() {
             onBackground="neutral-medium"
             style={{ textAlign: "center", lineHeight: 1.7 }}
           >
-            O Grupo NetFlow oferece soluções completas e integradas, unindo
-            tecnologia, design e inteligência de negócios.  
-            Explore abaixo nossos principais serviços e descubra como podemos
-            transformar ideias em resultados concretos.
+            O Grupo NetFlow oferece soluções completas e integradas, unindo tecnologia, design e
+            inteligência de negócios. Explore abaixo nossos principais serviços e descubra como
+            podemos transformar ideias em resultados concretos.
           </Text>
 
           <Column fillWidth gap="12" style={{ marginTop: 24 }}>
@@ -82,41 +81,6 @@ export default function ServicosPage() {
           </Column>
         </Column>
       </Card>
-
-      <Column
-        align="center"
-        gap="16"
-        style={{ marginTop: 60, textAlign: "center" }}
-      >
-        <Text variant="body-default-l" onBackground="neutral-medium">
-          Está pronto para começar? Entre em contato e vamos conversar sobre seu
-          projeto.
-        </Text>
-        <button
-          style={{
-            padding: "12px 28px",
-            fontSize: "1rem",
-            fontWeight: 600,
-            borderRadius: "8px",
-            border: "none",
-            cursor: "pointer",
-            background: "var(--brand-strong)",
-            color: "#ffffff",
-            transition: "background 0.3s",
-          }}
-          onMouseEnter={(e) =>
-            ((e.currentTarget as HTMLElement).style.background =
-              "var(--brand-hover)")
-          }
-          onMouseLeave={(e) =>
-            ((e.currentTarget as HTMLElement).style.background =
-              "var(--brand-strong)")
-          }
-          onClick={() => (window.location.href = "/contato")}
-        >
-          Vamos conversar
-        </button>
-      </Column>
     </main>
   );
 }

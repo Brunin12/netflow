@@ -222,4 +222,3 @@ export interface Projects extends BasePageConfig {}
  * @description Configuration for the Testemony page, including metadata and navigation label.
  */
 export interface Testemony extends BasePageConfig {}
-

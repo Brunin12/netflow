@@ -9,10 +9,9 @@ import {
   Row,
   Schema,
   Meta,
-  Line,
 } from "@once-ui-system/core";
 import { home, person, baseURL } from "@/resources";
-import Projects from "@/components/Projects";
+import { Projects } from "@/components/Projects";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -77,7 +76,7 @@ export default function Home() {
             <Button
               id="about"
               data-border="rounded"
-              href={'/sobre'}
+              href={"/sobre"}
               variant="secondary"
               size="m"
               weight="default"
@@ -107,12 +106,10 @@ export default function Home() {
           </Text>
         </RevealFx>
 
-
         <RevealFx translateY="24" delay={0.6}>
           <Projects />
         </RevealFx>
       </Column>
-
     </Column>
   );
 }

@@ -1,8 +1,4 @@
-import {
-  Home,
-  Person,
-  Social,
-} from "@/types";
+import { Home, Person, Social } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
@@ -61,11 +57,10 @@ const home: Home = {
   },
   subline: (
     <>
-      Na <strong className="ml-4">NetFlow</strong>
-      , criamos experiências digitais que conectam tecnologia,
-      criatividade e inteligência para impulsionar marcas.
+      Na <strong className="ml-4">NetFlow</strong>, criamos experiências digitais que conectam
+      tecnologia, criatividade e inteligência para impulsionar marcas.
     </>
   ),
 };
 
-export { person, social, home};
+export { person, social, home };

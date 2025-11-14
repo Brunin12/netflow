@@ -1,7 +1,8 @@
-import { Column, Row, Heading, Text, Button } from "@once-ui-system/core";
+import { Text, Button, Column, Heading, Row } from "@once-ui-system/core/components";
 import Link from "next/link";
 
 export default function NotFound() {
+
   return (
     <Column
       as="section"
@@ -24,11 +25,7 @@ export default function NotFound() {
         404
       </Text>
 
-      <Heading
-        marginBottom="m"
-        variant="display-default-m"
-        style={{ fontWeight: "700" }}
-      >
+      <Heading marginBottom="m" variant="display-default-m" style={{ fontWeight: "700" }}>
         Página não encontrada
       </Heading>
 
@@ -42,14 +39,15 @@ export default function NotFound() {
           margin: "0 auto",
         }}
       >
-        Parece que você se perdeu. Mas não se preocupe, a inovação sempre começa fora do caminho comum.
+        Parece que você se perdeu. Mas não se preocupe, a inovação sempre começa fora do caminho
+        comum.
       </Text>
-      <br/>
+      <br />
 
       <Row center>
         <Link href="/">
           <Button
-            variant="primary"            
+            variant="primary"
             style={{
               padding: "12px 28px",
               fontSize: "1rem",

@@ -52,8 +52,8 @@ export default function ContatoPage() {
             lineHeight: 1.6,
           }}
         >
-          Entre em contato com a equipe <strong>NetFlow</strong>.  
-          Estamos prontos para discutir seu projeto, tirar dúvidas e construir algo incrível juntos.
+          Entre em contato com a equipe <strong>NetFlow</strong>. Estamos prontos para discutir seu
+          projeto, tirar dúvidas e construir algo incrível juntos.
         </Text>
 
         {/* Contato rápido */}
@@ -153,12 +153,10 @@ export default function ContatoPage() {
                   transition: "background 0.3s",
                 }}
                 onMouseEnter={(e) =>
-                  ((e.currentTarget as HTMLElement).style.background =
-                    "var(--brand-hover)")
+                  ((e.currentTarget as HTMLElement).style.background = "var(--brand-hover)")
                 }
                 onMouseLeave={(e) =>
-                  ((e.currentTarget as HTMLElement).style.background =
-                    "var(--brand-strong)")
+                  ((e.currentTarget as HTMLElement).style.background = "var(--brand-strong)")
                 }
               >
                 Enviar Mensagem

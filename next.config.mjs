@@ -1,7 +1,7 @@
 import createMDX from "@next/mdx";
 
-/** 
- * Configura o suporte a arquivos .mdx 
+/**
+ * Configura o suporte a arquivos .mdx
  * (páginas e componentes)
  */
 const withMDX = createMDX({
@@ -12,11 +12,6 @@ const withMDX = createMDX({
 const nextConfig = {
   // Permite usar .mdx como página (app router e pages router)
   pageExtensions: ["ts", "tsx", "md", "mdx"],
-
-  // Corrige erros de build em dev (Turbopack ainda bugado)
-  experimental: {
-    turbo: false, // força o uso do Webpack
-  },
 
   // Caso use next-mdx-remote ou componentes externos
   transpilePackages: ["next-mdx-remote"],

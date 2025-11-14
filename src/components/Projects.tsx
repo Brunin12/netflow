@@ -2,19 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import {
-  Card,
-  Row,
-  Column,
-  Media,
-  Text,
-  Line,
-  Icon,
-  Button,
-  Hover,
-} from "@once-ui-system/core";
+import { Card, Row, Column, Media, Text, Line, Icon, Button, Hover } from "@once-ui-system/core";
 
-export default function Projects() {
+export function Projects() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const projects = [
@@ -104,7 +94,6 @@ export default function Projects() {
       >
         {projects.map((p, i) => (
           <div key={i} style={{ width: "100%" }}>
-
             <Card
               radius="l-4"
               direction="column"
@@ -152,13 +141,7 @@ export default function Projects() {
 
               <Line background="neutral-alpha-medium" />
 
-              <Row
-                paddingX="20"
-                paddingY="12"
-                gap="8"
-                vertical="center"
-                justify="space-between"
-              >
+              <Row paddingX="20" paddingY="12" gap="8" vertical="center">
                 <Button
                   size="s"
                   variant="tertiary"
@@ -179,11 +162,7 @@ export default function Projects() {
                   </Button>
                 )}
 
-                <Button
-                  size="s"
-                  variant="tertiary"
-                  onClick={() => setSelectedImage(p.image)}
-                >
+                <Button size="s" variant="tertiary" onClick={() => setSelectedImage(p.image)}>
                   <Icon name="maximize" size="s" />
                   Ver imagem
                 </Button>

@@ -6,13 +6,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Row
-      as="footer"
-      fillWidth
-      padding="8"
-      horizontal="center"
-      s={{ direction: "column" }}
-    >
+    <Row as="footer" fillWidth padding="8" horizontal="center" s={{ direction: "column" }}>
       <Row
         className={styles.mobile}
         maxWidth="m"
@@ -39,10 +33,7 @@ export const Footer = () => {
             }}
           >
             Feito com ❤️ usando{" "}
-            <a
-              href="https://once-ui.com/products/magic-portfolio"
-              target="_blank"
-            >
+            <a href="https://once-ui.com/products/magic-portfolio" target="_blank">
               Once UI
             </a>
           </Text>
@@ -59,7 +50,7 @@ export const Footer = () => {
                   size="s"
                   variant="ghost"
                 />
-              )
+              ),
           )}
         </Row>
       </Row>

@@ -2,18 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import {
-  Card,
-  Row,
-  Column,
-  Media,
-  Text,
-  Line,
-  Icon,
-  Button,
-} from "@once-ui-system/core";
+import { Card, Row, Column, Media, Text, Line, Icon, Button } from "@once-ui-system/core";
 
-import Projects from "@/components/Projects";
+import { Projects } from "@/components/Projects";
 
 export default function ProjectsPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -26,7 +17,6 @@ export default function ProjectsPage() {
 
       {/* GRID RESPONSIVO */}
       <Projects />
-      
     </Column>
   );
 }

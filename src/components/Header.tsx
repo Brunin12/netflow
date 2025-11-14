@@ -4,10 +4,7 @@ import { usePathname } from "next/navigation";
 
 import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 
-import {
-  routes,
-  display,
-} from "@/resources";
+import { routes, display } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
 
@@ -16,13 +13,7 @@ export const Header = () => {
 
   return (
     <>
-      <Fade
-        s={{ hide: true }}
-        fillWidth
-        position="fixed"
-        height="80"
-        zIndex={9}
-      />
+      <Fade s={{ hide: true }} fillWidth position="fixed" height="80" zIndex={9} />
       <Fade
         hide
         s={{ hide: false }}
@@ -87,18 +78,9 @@ export const Header = () => {
             horizontal="center"
             zIndex={1}
           >
-            <Row
-              gap="4"
-              vertical="center"
-              textVariant="body-default-s"
-              suppressHydrationWarning
-            >
+            <Row gap="4" vertical="center" textVariant="body-default-s" suppressHydrationWarning>
               {routes["/"] && (
-                <ToggleButton
-                  prefixIcon="home"
-                  href="/"
-                  selected={pathname === "/"}
-                />
+                <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
               {routes["/sobre"] && (
@@ -107,7 +89,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="person"
                       href="/sobre"
-                      label={'Sobre'}
+                      label={"Sobre"}
                       selected={pathname === "/sobre"}
                     />
                   </Row>
@@ -126,7 +108,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="grid"
                       href="/projetos"
-                      label={'Projetos'}
+                      label={"Projetos"}
                       selected={pathname.startsWith("/work")}
                     />
                   </Row>
@@ -145,7 +127,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="book"
                       href="/servicos"
-                      label={'Serviços'}
+                      label={"Serviços"}
                       selected={pathname.startsWith("/blog")}
                     />
                   </Row>
@@ -157,7 +139,7 @@ export const Header = () => {
                     />
                   </Row>
                 </>
-              )}              
+              )}
               {display.themeSwitcher && (
                 <>
                   <Line background="neutral-alpha-medium" vert maxHeight="24" />
@@ -175,7 +157,9 @@ export const Header = () => {
             textVariant="body-default-s"
             gap="20"
           >
-            <Flex s={{ hide: true }}><a href="/contato">Entre em Contato</a></Flex>
+            <Flex s={{ hide: true }}>
+              <a href="/contato">Entre em Contato</a>
+            </Flex>
           </Flex>
         </Flex>
       </Row>
