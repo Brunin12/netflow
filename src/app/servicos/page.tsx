@@ -1,6 +1,6 @@
 "use client";
 
-import { Text, Column, RevealFx, Card, Accordion } from "@once-ui-system/core";
+import { Text, Column, Card, Accordion, Row } from "@once-ui-system/core";
 
 export default function ServicosPage() {
   const services = [
@@ -40,15 +40,16 @@ export default function ServicosPage() {
         padding: "60px 20px",
       }}
     >
-      <RevealFx translateY="16" delay={0.2}>
-        <Text
-          variant="display-default-l"
-          onBackground="neutral-strong"
-          style={{ textAlign: "center", width: "100%", marginBottom: "30px" }}
-        >
-          Nossos Serviços
-        </Text>
-      </RevealFx>
+      <Row center marginBottom="l">
+        <Column center>
+          <Text
+            variant="display-default-l"
+            onBackground="neutral-strong"
+          >
+            Nossos Serviços
+          </Text>
+        </Column>
+      </Row>
 
       <Card padding="12" radius="l" shadow="m" background="page">
         <Column gap="16">

@@ -1,19 +1,26 @@
 "use client";
 
-import { Column, Text, Row, RevealFx, Button } from "@once-ui-system/core";
+import { Column, Text, Row, Button } from "@once-ui-system/core";
 
 export default function SobrePage() {
   return (
     <main style={{ width: "100%", maxWidth: 1000, margin: "0 auto", padding: "40px 16px" }}>
-      <RevealFx translateY="16" delay={0.3}>
-        <Text
-          variant="display-default-l"
-          onBackground="neutral-strong"
-          style={{ textAlign: "center", width: "100%", marginBottom: "30px" }}
-        >
-          Sobre a NetFlow
-        </Text>
-      </RevealFx>
+      <Row center marginBottom="l">
+        <Column center>
+          <Text
+            variant="display-default-l"
+            onBackground="neutral-strong"
+            style={{
+              textAlign: "center",
+              width: "100%",
+              display: "block"
+            }}
+          >
+            Sobre a NetFlow
+          </Text>
+        </Column>
+      </Row>
+
 
       <Column gap="20">
         <Text variant="body-default-l" onBackground="neutral-medium">

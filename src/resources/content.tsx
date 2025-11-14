@@ -38,9 +38,9 @@ const social: Social = [
 const home: Home = {
   path: "/",
   image: "/logo.png",
-  label: "Início",
-  title: `${person.name} | Estúdio Digital`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
+  label: "NetFlow",
+  title: `${person.name} | Programação, Marketing e IA`,
+  description: `Soluções digitais sob medida unindo desenvolvimento, estratégia de marketing e inteligência artificial.`,
   headline: <>Domine o digital com tecnologia e inovação.</>,
   featured: {
     display: true,

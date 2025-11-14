@@ -1,6 +1,6 @@
 "use client";
 
-import { Text, Column, Row, Card, RevealFx, Input, Textarea } from "@once-ui-system/core";
+import { Text, Column, Row, Card, Input, Textarea } from "@once-ui-system/core";
 import { useState } from "react";
 
 export default function ContatoPage() {
@@ -33,7 +33,6 @@ export default function ContatoPage() {
         gap="48"
       >
         {/* Cabeçalho */}
-        <RevealFx translateY="16" delay={0.2}>
           <Text
             variant="display-default-l"
             onBackground="neutral-strong"
@@ -41,7 +40,6 @@ export default function ContatoPage() {
           >
             Fale Conosco
           </Text>
-        </RevealFx>
 
         <Text
           variant="body-default-l"
